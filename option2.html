@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #2 | Full Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .description h1 {
+            font: normal normal normal 160px/160px Satisfy;
+            font-size: 8em;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 36px #00000087;
+        }
+
+        .description h3 {
+            font: normal normal normal 32px/38px Varela Round;
+            color: #FFFFFF;
+        }
+
+        .description p {
+            font: normal normal normal 18px/20px Varela Round;
+            color: #F9F9F9;
+            margin-top: 1em;
+        }
+
+        form {
+            display: flex;
+            margin-top: 2.0em;
+        }
+
+        .label-control {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font: normal normal normal 16px/20px Varela Round;
+            color: #F9F9F9;
+            text-align: start;
+        }
+
+        input {
+            width: 95%;
+            height: 30px;
+            background: #F6F6F624 0% 0% no-repeat padding-box;
+            border: 2px solid #FFFFFF;
+            margin-right: 1em;
+            text-align: left;
+        }
+
+        #btn {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            text-align: center;
+            font: normal normal normal 16px/20px Varela Round;
+            letter-spacing: 0px;
+            color: #1C1C1C;
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            border-style: none;
+        }
+
+        #btn:hover {
+            background-color: #F6F6F624;
+            box-shadow: 0px 0px 20px #00000087;
+            color: #F9F9F9;
+            cursor: pointer;
+        }
+
+        @media (max-width:800px) {
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                width: 60vw;
+            }
+        }
+
+        @media (max-width:576px) {
+            .description h1 {
+                font-size: 4em;
+            }
+
+            .description h3 {
+                font-size: 1.5em;
+            }
+        }
+
+        .go-back {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            left: 30px;
+            border-radius: 50%;
+            background-color: #13E8F163;
+            text-decoration: none;
+        }
+
+        .go-back img {
+            width: 60px;
+        }
+
+        .go-back:hover {
+            background-color: #F6F6F6;
+            transition: background-color 0.3s ease;
+            box-shadow: 3px 3px 15px #00000029;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="description">
+            <h1>Here & Now</h1>
+            <h3>We invite you to enjoy a variety of gifts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora dolore. Sapiente minus voluptas
+                quidem
+                ipsa dolorem atque quis nemo!</p>
+        </div>
+
+        <form>
+            <div class="label-control">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="label-control">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="label-control">
+                <input id="btn" type="button" value="SEND">
+            </div>
+        </form>
+
+        <a href="gallery-Item2.html" class="go-back"><img src="images/left-arrow-1_icon-icons.com_69827.png"
+                alt="go-back">
+        </a>
+    </div>
+</body>
+
+</html>

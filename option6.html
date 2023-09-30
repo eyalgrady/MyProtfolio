@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #6 | Full Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            width: 40vw;
+        }
+
+        .img-container img {
+            width: 60%;
+        }
+
+        .form-container h1 {
+            font-size: 2.4em;
+            color: #FDBD03;
+        }
+
+        .form-container p {
+            font-size: 1em;
+            color: #020253;
+        }
+
+        form {
+            width: 60vw;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: row;
+        }
+
+        label {
+            display: block;
+            color: #2C2C2C;
+            margin-top: 10px;
+        }
+
+        input {
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            border: none;
+            border-bottom: 3.5px solid #FDBD03;
+            width: 20vw;
+            height: 30px;
+            margin-right: 1em;
+        }
+
+        textarea {
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            border: none;
+            border-bottom: 3.5px solid #FDBD03;
+            width: 41vw;
+            height: 100px;
+            resize: none;
+        }
+
+        #btn {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+            font-size: 1em;
+            line-height: 1.8;
+            color: #000000;
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            margin-top: 2em;
+            max-width: 150px;
+        }
+
+        #btn:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .top-strip {
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            width: 300px;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .bttm-strip {
+            border-bottom: 10px solid #FDBD03;
+            width: 60vw;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .bttm-icons-strip {
+            margin-top: 140px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .icon-strip {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            width: 70px;
+            height: 70px;
+            font-size: 2em;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            margin: 1%;
+        }
+
+        .top-icons-strip {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        .top-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            width: 70px;
+            height: 70px;
+            font-size: 2em;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            margin: 1%;
+        }
+
+        .icon-strip:hover,
+        .top-icon:hover {
+            background-color: #ddd;
+        }
+
+        @media (max-width:800px) {
+            .main-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bttm-strip {
+                border-bottom: 10px solid #FDBD03;
+                width: 100%;
+                position: relative;
+                bottom: 0;
+                right: 0;
+            }
+
+            .bttm-icons-strip {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .top-strip {
+                width: 100%;
+            }
+
+            .img-container {
+                height: 100%;
+                justify-content: end;
+            }
+
+            .img-container img {
+                min-width: 200px;
+                margin-top: 250px;
+            }
+
+            form {
+                height: 400px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
+
+            .form-control {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+            }
+
+        }
+
+        .go-back {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            left: 30px;
+            border-radius: 50%;
+            background-color: #13E8F163;
+            text-decoration: none;
+        }
+
+        .go-back img {
+            width: 60px;
+        }
+
+        .go-back:hover {
+            background-color: #F6F6F6;
+            transition: background-color 0.3s ease;
+            box-shadow: 3px 3px 15px #00000029;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="img-container">
+            <img src="images/option6-img.png" alt="contact-form-image">
+        </div>
+        <form>
+            <div class="form-container">
+                <h1>Free consultation</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem?</p><br>
+            </div>
+
+            <div class="form-control">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+            </div>
+            <label for="text">What do you Think?</label>
+            <textarea id="text" maxlength="50"></textarea>
+            <br>
+            <input type="button" id="btn" value="SEND">
+        </form>
+
+        <div class="top-strip"></div>
+
+        <div class="top-icons-strip">
+            <a href="#" class="top-icon"><img class="icon-img" src="images/Icon-whatsapp.svg" alt="whatsapp-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="bttm-strip">
+        <div class="bttm-icons-strip">
+            <a href="#" class="icon-strip">
+                <img class="icon-img" src="images/Icon-facebook.svg" alt="facebook-icon"> </a>
+            <a href="#" class="icon-strip">
+                <img class="icon-img" src="images/Icon-linkedin.svg" alt="linkedin-icon"> </a>
+            <a href="#" class="icon-strip">
+                <img class="icon-img" src="images/Icon-location.svg" alt="location-icon"> </a>
+            <a href="#" class="icon-strip">
+                <img class="icon-img" src="images/Icon-phone.svg" alt="telephone-icon"> </a>
+        </div>
+    </div>
+
+    <a href="gallery-Item6.html" class="go-back"><img src="images/left-arrow-1_icon-icons.com_69827.png" alt="go-back">
+    </a>
+</body>
+
+</html>

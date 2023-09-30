@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #1 | Full Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .main-container img {
+            width: 100vw;
+            height: 60vh;
+        }
+
+        form {
+            width: 400px;
+            padding: 60px;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            background: #1A1A1AD4 0% 0% no-repeat padding-box;
+        }
+
+        form h2 {
+            font-size: 2.3em;
+            color: #FFFFFF;
+        }
+
+        form p {
+            font-size: 1.2em;
+            color: #F9F9F9;
+        }
+
+        .label {
+            display: block;
+            color: #FFFFFF;
+            margin-top: 1em;
+        }
+
+        .input {
+            width: 100%;
+            height: 35px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D31C75;
+        }
+
+        #btn {
+            text-align: center;
+            font-size: 1.2em;
+            letter-spacing: 0.33px;
+            color: #FFFFFF;
+            background-color: #D31C75;
+            width: 150px;
+            height: 50px;
+            margin-top: 1.5em;
+            border: none;
+        }
+
+        #btn:hover {
+            background-color: #F6F6F6;
+            color: #1A1A1AD4;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width:800px) {
+            form {
+                position: absolute;
+                width: 80vw;
+                min-width: 250px;
+            }
+        }
+
+        .go-back {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            left: 30px;
+            border-radius: 50%;
+            background-color: #13E8F163;
+            text-decoration: none;
+        }
+
+        .go-back img {
+            width: 60px;
+        }
+
+        .go-back:hover {
+            background-color: #F6F6F6;
+            transition: background-color 0.3s ease;
+            box-shadow: 3px 3px 15px #00000029;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <img src="images/option1-headline-img.png" alt="headline-img">
+        <form>
+            <h2>Let us lead you forward</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam provident commodi.
+            </p>
+
+            <label class="label" for="name">Name</label>
+            <input class="input" type="text" id="name">
+
+            <label class="label" for="email">Email</label>
+            <input class="input" type="text" id="email">
+
+            <input type="button" id="btn" value="SEND">
+        </form>
+    </div>
+
+    <a href="gallery-Item1.html" class="go-back"><img src="images/left-arrow-1_icon-icons.com_69827.png" alt="go-back">
+    </a>
+</body>
+
+</html>

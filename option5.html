@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #5 | Full Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+        }
+
+        .grid-container {
+            width: 80vw;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 1%;
+            margin: 150px auto;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .headline {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background: #020253 0% 0% no-repeat padding-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 70px;
+        }
+
+        .headline h1 {
+            font-size: 3.5em;
+            color: #0EE1DA;
+        }
+
+        .headline p {
+            font-size: 1.2em;
+            color: #F9F9F9;
+        }
+
+        .form {
+            grid-column: 3/5;
+            grid-row: 4/7;
+            background: #8E097C 0% 0% no-repeat padding-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 70px;
+        }
+
+        .form h3 {
+            font-size: 2.2em;
+            color: #FFFFFF;
+        }
+
+        .form p {
+            font-size: 1.2em;
+            color: #F9F9F9;
+        }
+
+        form {
+            width: 90%;
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+            font-weight: bold;
+            color: #0EE1DA;
+        }
+
+        input {
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            width: 100%;
+            height: 30px;
+            max-width: 400px;
+            border: none;
+            border-bottom: 3.5px solid #0EE1DA;
+
+        }
+
+        textarea {
+            display: block;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            resize: none;
+            border-bottom: 3.5px solid #0EE1DA;
+            width: 95%;
+        }
+
+        #btn {
+            background: #0EE1DA 0% 0% no-repeat padding-box;
+            text-align: center;
+            font: normal normal bold 24px/33px Heebo;
+            letter-spacing: 0.36px;
+            color: #011560;
+            margin-top: 1em;
+            border: none;
+        }
+
+        @media (max-width:800px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                gap: 15px;
+                margin: 50px;
+            }
+
+            .headline {
+                grid-column: 1/3;
+                grid-row: 1/3;
+                background: #020253 0% 0% no-repeat padding-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 50px;
+            }
+
+            .form {
+                grid-column: 1/3;
+                grid-row: 7/10;
+                background: #8E097C 0% 0% no-repeat padding-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width:576px) {
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                gap: 15px;
+                margin: 50px;
+            }
+
+            textarea {
+                display: block;
+                background: #E5EEFF 0% 0% no-repeat padding-box;
+                resize: none;
+                border-bottom: 3.5px solid #0EE1DA;
+                width: 100%;
+            }
+        }
+
+        .go-back {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            left: 30px;
+            border-radius: 50%;
+            background-color: #13E8F163;
+            text-decoration: none;
+        }
+
+        .go-back img {
+            width: 60px;
+        }
+
+        .go-back:hover {
+            background-color: #F6F6F6;
+            transition: background-color 0.3s ease;
+            box-shadow: 3px 3px 15px #00000029;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="headline">
+            <h1>Discover the Planet</h1><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptatem? Eligendi ut
+                quaerat accusamus!</p>
+        </div>
+        <div class="img-1"><img src="images/option5-img1.png" alt="img-1"></div>
+        <div class="img-2"><img src="images/option5-img2.png" alt="img-2"></div>
+        <div class="img-3"><img src="images/option5-img3.png" alt="img-3"></div>
+        <div class="img-4"><img src="images/option5-img4.png" alt="img-4"></div>
+        <div class="img-5"><img src="images/option5-img5.png" alt="img-5"></div>
+        <div class="img-6"><img src="images/option5-img6.png" alt="img-6"></div>
+        <div class="img-7"><img src="images/option5-img7.png" alt="img-7"></div>
+        <div class="img-8"><img src="images/option5-img8.png" alt="img-8"></div>
+        <div class="img-9"><img src="images/option5-img9.png" alt="img-9"></div>
+        <div class="img-10"><img src="images/option5-img10.png" alt="img-10"></div>
+        <div class="img-11"><img src="images/option5-img11.png" alt="img-11"></div>
+        <div class="img-12"><img src="images/option5-img12.png" alt="img-13"></div>
+        <div class="img-13"><img src="images/option5-img13.png" alt="img-13"></div>
+        <div class="img-14"><img src="images/option5-img14.png" alt="img-14"></div>
+        <div class="form">
+            <form>
+                <h3>Tell us your experience</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex distinctio quod
+                    dolorem quia autem.</p><br>
+                <label for="uname">Name</label>
+                <input type="text" id="uname">
+                <label for="uemail">Email</label>
+                <input type="text" id="uemail">
+                <label for="utext">Message</label>
+                <textarea name="utext" id="utext" cols="30" rows="10"></textarea>
+                <input id="btn" type="button" value="SEND">
+            </form>
+        </div>
+    </div>
+
+    <a href="gallery-Item5.html" class="go-back"><img src="images/left-arrow-1_icon-icons.com_69827.png" alt="go-back">
+    </a>
+</body>
+
+</html>
